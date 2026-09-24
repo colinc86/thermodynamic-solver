@@ -1,0 +1,8 @@
+# Relative error on the variance vs integration time, 30 records. Theory is sqrt(2*tau/T) with tau = 92.0 us from the measured R and C - nothing fitted. log-log slope -0.469 (required -0.500).
+T_ms,n_windows,eps_measured,eps_theory
+10,1800,0.12540,0.13566
+20,900,0.08782,0.09593
+40,450,0.06371,0.06783
+80,210,0.04495,0.04796
+150,120,0.03239,0.03503
+300,60,0.02641,0.02477

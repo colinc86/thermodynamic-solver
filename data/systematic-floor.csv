@@ -1,0 +1,26 @@
+# rho12 estimated over windows of length T, 30 records. scatter = std across windows (falls as 1/sqrt(T) regardless of any bias). accuracy_rms = RMS deviation from the model rho = 0.3532; it flattens at the systematic floor. 'before_regrounding' is the same board minutes earlier with the probe grounds not yet tied to the shield.
+configuration,T_ms,n_windows,scatter,abs_bias,accuracy_rms
+final,2,9000,0.14898,0.01134,0.14940
+final,5,3600,0.09476,0.00070,0.09475
+final,10,1800,0.06845,0.00341,0.06851
+final,20,900,0.04863,0.00485,0.04885
+final,40,450,0.03583,0.00549,0.03621
+final,80,210,0.02623,0.00537,0.02671
+final,150,120,0.01916,0.00616,0.02005
+final,300,60,0.01494,0.00621,0.01607
+final,600,30,0.01029,0.00632,0.01193
+final,1200,15,0.00823,0.00634,0.01017
+final,1800,10,0.00621,0.00636,0.00867
+final,3000,6,0.00530,0.00637,0.00800
+before_regrounding,2,9000,0.14733,0.00061,0.14732
+before_regrounding,5,3600,0.09417,0.01185,0.09490
+before_regrounding,10,1800,0.06912,0.01490,0.07068
+before_regrounding,20,900,0.04979,0.01648,0.05242
+before_regrounding,40,450,0.03707,0.01722,0.04084
+before_regrounding,80,210,0.02769,0.01782,0.03287
+before_regrounding,150,120,0.02007,0.01794,0.02685
+before_regrounding,300,60,0.01516,0.01810,0.02353
+before_regrounding,600,30,0.01098,0.01818,0.02115
+before_regrounding,1200,15,0.00714,0.01816,0.01943
+before_regrounding,1800,10,0.00786,0.01822,0.01969
+before_regrounding,3000,6,0.00744,0.01815,0.01938

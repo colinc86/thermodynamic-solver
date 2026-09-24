@@ -1,0 +1,6 @@
+# Condition-number ladder: R4 removed, R1 ~ R2 = RL, R3 = 1 k, band 200-30000 Hz. R1, R2 are the out-of-circuit multimeter readings (they are NOT matched to 0.1 %: the pairs differ by up to 1.67 %); R3 measured 1000.6 ohm. The model uses the measured R1 and R2 separately. kappa_meas = var(v1+v2)/var(v1-v2), per record, mean and standard error over 30 records; kappa_model_bandlimited is the same quantity from the pole-weighted model with the measured asymmetry. pred_* are the PRE-REGISTERED floors |err| = 0.007 (kappa/2.21)^p. The kappa 5.3 rung started before the board had thermally settled; its drift column shows it.
+kappa_model,R1_ohm,R2_ohm,R3_ohm,n_records,kappa_meas,std_err,kappa_model_bandlimited,deviation_pct,deviation_std_err_pct,pred_p1_pct,pred_p05_pct,pred_p0_pct,drift_over_run_pct
+3.00,1006.5,990.0,1000.6,30,4.291,0.008,4.115,+4.27,0.20,0.95,0.81,0.70,-0.0
+5.34,2172.0,2174.3,1000.6,30,7.362,0.020,7.182,+2.50,0.28,1.69,1.09,0.70,-2.3
+10.37,4685.6,4692.3,1000.6,30,13.191,0.060,13.249,-0.44,0.46,3.29,1.52,0.70,+0.0
+20.95,10049.0,9914.0,1000.6,30,23.971,0.095,23.982,-0.05,0.40,6.64,2.16,0.70,+1.7

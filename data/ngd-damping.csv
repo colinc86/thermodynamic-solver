@@ -1,0 +1,14 @@
+# Damped NGD on a 730-parameter MLP (MNIST, 4x4-pooled to 49 inputs), EXACT Fisher, 400 steps, mean over 3 seeds (sd_* are the seed spread).
+# SGD baseline at the same step budget: loss 0.2990 +/- 0.0028, acc 0.8981 (lr 1.0, best of a 5-point grid).
+# eps_sys = 0.007 (kappa_eff/2.21)^p, the ladder's pre-registered form, applied to the eigenvalues of the inverse the device returns. p=0 is a flat floor, which the ladder allows; p=1 is the kappa^1 floor it ruled out.
+# lr_tuned is tuned on the EXACT solver per lambda and reused for p0/p1, so the only difference between the three columns is the solve error.
+lambda,kappa_eff,eps_sys_p0,eps_sys_p1,loss_exact,loss_p0,loss_p1,sd_exact,sd_p0,sd_p1,acc_exact,acc_p0,acc_p1,integration_time_s_p0,lr_tuned
+1e-05,72452.1,0.007,229.486,0.640383,0.634421,inf,0.018494,0.00858518,nan,0.807373,0.814779,0,32529.5,0.01
+3e-05,24151.4,0.007,76.4975,0.569477,0.563653,inf,0.0293247,0.0254621,nan,0.826823,0.830404,0,10843.5,0.01
+0.0001,7246.11,0.007,22.9515,0.477136,0.480932,inf,0.0098889,0.0279332,nan,0.852783,0.851888,0,3253.36,0.01
+0.0003,2416.04,0.007,7.6526,0.39957,0.413747,inf,0.00827863,0.00372308,nan,0.87264,0.863037,0.270833,1084.75,0.01
+0.001,725.511,0.007,2.298,0.331758,0.326973,inf,0.0133376,0.00536709,nan,0.886963,0.888916,0.571615,325.74,0.01
+0.003,242.504,0.007,0.768111,0.298989,0.292781,0.317191,0.00647316,0.00641701,0.006365,0.899577,0.902751,0.898031,108.879,0.01
+0.01,73.4511,0.007,0.232651,0.283671,0.279902,0.292295,0.00859146,0.00312063,0.00640896,0.900146,0.90153,0.8986,32.978,0.03
+0.03,25.1504,0.007,0.0796618,0.29436,0.289985,0.29102,0.00603023,0.00486036,0.00526708,0.899007,0.897624,0.893636,11.292,0.1
+0.1,8.24511,0.007,0.0261157,0.289614,0.29073,0.292899,0.00798765,0.00843305,0.00762502,0.894124,0.895264,0.896159,3.70189,0.3

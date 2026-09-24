@@ -1,0 +1,8 @@
+# Final configuration, band 200-50000 Hz, 30 records of 0.6 s pooled (18 s). std_err is the standard error of the mean across records. Gain is COMPUTED from measured resistors (A 1125, B 1130), capacitors are a matched pair - nothing in this model is free. The node voltages v1 and v2 carry a real residual (the board is louder than its noise budget); the scale-free quantities are immune to that.
+quantity,measured,std_err,predicted,deviation
+v1_mV,0.7097,0.0011,0.6057,+17.2 %
+v2_mV,0.6258,0.0009,0.5397,+16.0 %
+v1_over_v2,1.1340,0.0024,1.1223,+1.0 %
+rho12,0.3596,0.0019,0.3532,+1.8 %
+identity_offdiag_pct,-0.0658,0.2545,-0.4107,+0.34 pp
+lyapunov_offdiag_pct,-0.0043,0.2169,-0.6898,+0.69 pp

@@ -1,0 +1,27 @@
+# Difference spectrum with the network response removed, referred to the input at gain 1125. Flat would mean the R-dependent noise is white; it is close and not exact, rising ~20 % across 300 Hz - 20 kHz (log-log slope +0.044). sqrt(4kT*dR) = 12.07 nV/rtHz. Captures are from the 2026-09-11 board (C1 = 26.8 nF); they test the front end, which is unchanged.
+freq_Hz,input_referred_nV_per_rtHz
+329.0,14.555
+391.0,14.854
+462.5,13.687
+543.6,13.293
+639.0,13.839
+762.2,13.253
+896.5,14.123
+1058.6,13.761
+1254.1,13.912
+1496.8,13.747
+1754.8,14.635
+2079.0,14.283
+2460.5,14.329
+2908.7,14.352
+3438.0,14.525
+4067.4,14.602
+4811.3,14.490
+5693.4,14.889
+6737.7,14.998
+7967.9,14.907
+9427.1,15.137
+11148.5,15.451
+13178.1,15.780
+15597.3,17.594
+18453.6,17.686

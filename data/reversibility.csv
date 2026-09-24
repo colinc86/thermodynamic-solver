@@ -1,0 +1,7 @@
+# Detailed-balance test: a reversible process has a PURELY REAL cross-spectrum, so arg S12 is the observable. Band 200-5000 Hz; the 'notched' column additionally excludes 800-1600 Hz, where an independent capture (pgnd, both probe tips on one point of the shield) shows the probe-lead pickup carries 88.5 % of its power with its own phase of +0.79 rad. The exclusion is defined by that POWER spectrum, never by node-data phase. std_err is from the record-to-record spread. Pre-registration, confound budget, notch policy, synthetic-data validation of the estimator and the surrogate null: equilibrium.py.
+dataset,kappa,n_records,arg_S12_full_band,arg_S12_notched,std_err,arg_S12_model,sigma_from_model
+gnd2,2.21,30,+0.05377,-0.00585,0.00590,-0.00478,0.2
+r1,3.00,30,-0.00362,-0.00311,0.00220,-0.00452,0.6
+r2,5.34,30,+0.00142,-0.00031,0.00135,-0.00120,0.7
+r3,10.37,30,+0.00400,-0.00033,0.00095,-0.00101,0.7
+r4b,20.95,30,-0.00436,-0.00690,0.00069,-0.00308,5.5

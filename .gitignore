@@ -1,0 +1,7 @@
+# Raw oscilloscope captures are ~4 GB and are not tracked.
+# make_figures.py reads them via RAW=/path/to/captures
+*.npz
+*.meta.json
+
+__pycache__/
+.DS_Store
